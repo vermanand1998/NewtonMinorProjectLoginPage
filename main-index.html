@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>Minor Project</title>
+    <link rel="stylesheet" href="form-style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="column left">
+                    <img src="pic.png" style="background-color:darkorchid">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm <span style="color:firebrick;">Anand Verma</span> and I'm a Student of Rajkiya
+                        Engineering College, Azamgarh</div>
+                    <p class="para">I am basically from Barabanki Uttar pradesh currently pursuing my undergraduation in
+                        Bachelor of
+                        Technology from Rajkiya Engineering College, Azamgarh in information Technology branch. Apart
+                        from my undergraduation, I have completed C, JAVA, Full
+                        Stack Web Development and also completed cources from different organizations in Python and
+                        Machine Learning which is helping me to complete my final year project called
+                        Laryngeal Test using machine Learning.I have worked hard in my education and now I am ready to
+                        apply my knowledge into practice. That's all about me.
+                    </p>
+                    <a target="_blank">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#newton-modal" id="open-modal"
+                            style="font-weight: bolder; font-size: 25px;">More Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="newton-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="width: 78%;">
+                <div class="wrapper">
+                    <div class="title-text">
+                        <div class="title login">Login Form<h4 id="output2"></h4>
+                        </div>
+                        <div class="title signup">Signup Form<h4 id="output"></h4>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <div class="slide-controls">
+                            <input type="radio" name="slide" id="login" checked>
+                            <input type="radio" name="slide" id="signup">
+                            <label for="login" class="slide login"
+                                style="font-weight: bolder; font-size: 25px;">Login</label>
+                            <label for="signup" class="slide signup"
+                                style="font-weight: bolder; font-size: 25px;">Signup</label>
+                            <div class="slider-tab"></div>
+                        </div>
+                        <div class="form-inner">
+                            <form action="#" class="login" id="login">
+                                <div class="field">
+                                    <input type="text" placeholder="Email Address" id="einput" required>
+                                </div>
+                                <div class="field">
+                                    <input type="password" placeholder="Password" id="pinput" required>
+                                </div>
+                                <div class="pass-link">
+                                    <a href="forget-index.html">Forgot password?</a>
+                                </div>
+                                <br>
+                                <div
+                                    style="background: -webkit-linear-gradient(left, #a445b2, #fa4299); border-radius: 5px;">
+                                    <div class="btn-layer"></div>
+                                    <button type="button" class="btn" onclick="myFun()"
+                                        style="font-weight: bolder; font-size: 25px;">Login</button>
+                                </div>
+                                <br>
+                                <div>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        style="font-weight: bolder; font-size: 25px;">Close</button>
+                                </div>
+                                <hr>
+                                <div class="signup-link" style="text-align: center;">Not a member!<a href="#"> Sign-Up</a></div>
+                            </form>
+                            <form action="#" class="signup" id="form">
+                                <div class="field">
+                                    <input type="text" placeholder="abcd2021@gmail.com" id="einput1" required
+                                        class="form-control">
+                                    <small id="emailvalid" class="form-text text-muted invalid-feedback"></small>
+                                </div>
+                                <div class="field">
+                                    <input type="password" placeholder="Password-abc@2021" id="pinput1" required
+                                        class="form-control">
+                                    <small id="passvalid" class="form-text text-muted invalid-feedback"></small>
+                                </div>
+                                <div class="field">
+                                    <input type="password" placeholder="Confirm password" id="cpinput1" required>
+                                </div>
+                                <br>
+                                <div
+                                    style="background: -webkit-linear-gradient(left, #a445b2, #fa4299); border-radius: 5px;">
+                                    <div class="btn-layer"></div>
+                                    <button type="button" class="btn" onclick="myFun1()"
+                                        style="font-weight: bolder; font-size: 25px;">Signup</button>
+                                </div>
+                                <!-- <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Signup" onclick="myFun1()"
+                                        style="font-weight: bolder; font-size: 25px;">
+                                </div> -->
+                                <br>
+                                <div>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        style="font-weight: bolder; font-size: 25px;">Close</button>
+                                </div>
+                                <hr>
+                                <div class="signin-link" style="text-align: center;">already a member !<a href="#"> Sign-in</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="common-js.js"></script>
+
+</html>
